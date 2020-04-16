@@ -16,6 +16,8 @@ namespace Heranca
 
             Console.WriteLine(bsAccount);
 
+            bsAccount.Loan(1000);
+
             Console.ReadLine();
         }
     }

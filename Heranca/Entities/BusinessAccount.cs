@@ -4,7 +4,7 @@ namespace Heranca.Entities
 {
     class BusinessAccount : Account
     {
-        public double LoanLimit { get; set; }
+        public double LoanLimit { get; private set; }
 
         public BusinessAccount()
         {
@@ -28,6 +28,7 @@ namespace Heranca.Entities
             sb.AppendLine("Number Account: " + Number);
             sb.AppendLine("Holder: " + Holder);
             sb.AppendLine("Balance: R$ " + Balance);
+            sb.AppendLine("LoanLimit: " + LoanLimit);
 
             return sb.ToString();
         }
